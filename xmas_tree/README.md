@@ -1,5 +1,7 @@
 # Xmas Tree
 
+Codewars link: https://www.codewars.com/kata/577c349edf78c178a1000108
+
 Complete the function that returns a christmas tree of the given height. The height is passed through to the function and the function should return a list containing each line of the tree.
 
 ```
