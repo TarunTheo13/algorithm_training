@@ -16,4 +16,8 @@ describe '#not_visible_cubes' do
   it 'returns expected value for cube of size three' do
     expect(not_visible_cubes(3)).to eq 1
   end
+
+  it 'returns expected value for cube of size four' do
+    expect(not_visible_cubes(4)).to eq 8
+  end
 end
