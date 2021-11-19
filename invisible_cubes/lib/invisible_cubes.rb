@@ -1,3 +1,7 @@
 def not_visible_cubes(n)
-  0
+  if n <= 2
+    0
+  else
+    (n-2) ** 2
+  end
 end
