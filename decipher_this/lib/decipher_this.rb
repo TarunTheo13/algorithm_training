@@ -1,16 +1,21 @@
 def decipher_this(string)
-  char_code = []
-  string.split.each do |x| 
-    if x.to_i.is_a? Numeric
-      char_code.push(x)
+  arr = string.split
+  arr2 = []
+  arr.each do |word|
+    char_code = []
+    word.split.each do |x| 
+      if x.to_i.is_a? Numeric
+        char_code.push(x)
+      end
     end
+    word.insert(0, char_code[0].to_i.chr)
+    word.tr!("0-9", "")
+    if word.length > 2
+      second = word[1]
+      word[1] = word[word.length-1]
+      word[word.length-1] = second
+    end
+     arr2.push(word)
   end
-  string.insert(0, char_code[0].to_i.chr)
-  string.tr!("0-9", "")
-  if string.length > 2
-    second = string[1]
-    string[1] = string[string.length-1]
-    string[string.length-1] = second
-  end
-  return string
+  return arr2.join(' ')
 end

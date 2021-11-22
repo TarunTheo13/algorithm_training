@@ -9,4 +9,7 @@ describe '#decipher_this' do
     expect(decipher_this('72olle')).to eq 'Hello'
   end
 
+  it 'returns expected string for multiple words' do
+    expect(decipher_this('65 119esi 111dl 111lw 108dvei 105n 97n 111ka')).to eq 'A wise old owl lived in an oak'
+  end
 end
