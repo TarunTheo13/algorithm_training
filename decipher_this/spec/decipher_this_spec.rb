@@ -5,8 +5,8 @@ describe '#decipher_this' do
     expect(decipher_this('100')).to eq 'd'
   end
 
-  # it 'returns expected string for one word' do
-  #   expect(decipher_this('72olle')).to eq 'Hello'
-  # end
+  it 'returns expected string for one word' do
+    expect(decipher_this('72olle')).to eq 'Hello'
+  end
 
 end
