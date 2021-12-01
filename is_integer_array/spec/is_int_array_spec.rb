@@ -24,4 +24,8 @@ describe '#is_int_array' do
   it 'returns false for array with numbers with decimal places' do
     expect(is_int_array([1, 2.5, 3.4])).to eq false
   end
+
+  it 'returns false when passed a string' do
+    expect(is_int_array("")).to eq false
+  end
 end
