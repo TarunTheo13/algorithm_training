@@ -20,4 +20,8 @@ describe '#is_int_array' do
   it 'returns true for array with negative numbers' do
     expect(is_int_array([-1, -2, -3, -4])).to eq true
   end
+
+  it 'returns false for array with numbers with decimal places' do
+    expect(is_int_array([1, 2.5, 3.4])).to eq false
+  end
 end
