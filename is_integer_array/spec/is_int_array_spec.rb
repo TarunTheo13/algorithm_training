@@ -16,4 +16,8 @@ describe '#is_int_array' do
   it 'returns true for array with whole numbers' do
     expect(is_int_array([1.0, 2.0, 3.0])).to eq true
   end
+
+  it 'returns true for array with negative numbers' do
+    expect(is_int_array([-1, -2, -3, -4])).to eq true
+  end
 end
