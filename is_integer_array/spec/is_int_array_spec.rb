@@ -12,4 +12,8 @@ describe '#is_int_array' do
   it 'returns false for array with nil' do
     expect(is_int_array([1, 2, nil])).to eq false
   end
+
+  it 'returns true for array with whole numbers' do
+    expect(is_int_array([1.0, 2.0, 3.0])).to eq true
+  end
 end
