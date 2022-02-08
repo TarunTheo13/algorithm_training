@@ -1,6 +1,6 @@
 def tribonacci(arr, n)
-  if n > 3
-    (n-3).times { arr << (arr[arr.length-3]+arr[arr.length-2]+arr[arr.length-1]) }
+  for i in 3..n
+    arr[i] = arr[i-1] + arr[i-2] + arr[i-3]
   end
   arr.slice(0, n)
 end
