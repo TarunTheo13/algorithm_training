@@ -1,3 +1,6 @@
 def tribonacci(signature, n)
-  return signature
+  if n < 3
+    signature.pop
+  end
+  signature
 end
