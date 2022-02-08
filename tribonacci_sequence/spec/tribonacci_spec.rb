@@ -20,4 +20,8 @@ describe '#tribonacci' do
   it 'returns expected array for n=4' do
     expect(tribonacci([1,1,1], 4)). to eq [1,1,1,3]
   end
+
+  it 'returns expected array for n=5' do
+    expect(tribonacci([1,1,1], 5)). to eq [1,1,1,3,5]
+  end
 end
