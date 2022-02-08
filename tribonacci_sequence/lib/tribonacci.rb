@@ -1,6 +1,6 @@
 def tribonacci(signature, n)
   if n < 3
-    signature.pop
+    (3-n).times { signature.pop }
   end
   signature
 end
