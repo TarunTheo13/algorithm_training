@@ -1,3 +1,3 @@
 def filter_list(arr)
-  arr
+  arr.select {|x| x.is_a? Integer}
 end
